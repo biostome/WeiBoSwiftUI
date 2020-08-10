@@ -63,3 +63,9 @@ func loadImage(name:String) -> Image{
     let image = UIImage.init(named: name)!
     return Image(uiImage: image)
 }
+
+struct Post_Previews: PreviewProvider {
+    static var previews: some View {
+        /*@START_MENU_TOKEN@*/Text("Hello, World!")/*@END_MENU_TOKEN@*/
+    }
+}

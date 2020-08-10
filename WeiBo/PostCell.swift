@@ -14,7 +14,7 @@ struct PostCell: View {
     let post: Post
     
     var body: some View {
-        VStack {
+        VStack(alignment: .center, spacing: 10) {
             HStack() {
                 post.avatarImage
                     .resizable()
@@ -60,11 +60,7 @@ struct PostCell: View {
             }
             Text(post.text).font(.system(size: 17))
             if post.images.isEmpty == false {
-                loadImage(name: post.images[0])
-                    .resizable()
-                    .scaledToFill()
-                    .frame(width: UIScreen.main.bounds.width - 30, height: UIScreen.main.bounds.width - 30, alignment: .center)
-                    .clipped()
+                PostImageCell(images: post.images,  width: UIScreen.main.bounds.width - 30)
             }
             Divider()
             
@@ -83,14 +79,13 @@ struct PostCell: View {
             Rectangle()
                 .padding(.horizontal, -15)
                 .frame(height: 10)
-                .foregroundColor(.gray)
+                .foregroundColor(.init(red: 0.9, green: 0.9, blue: 0.9))
         }
-        .padding(.top,15)
     }
 }
 
 struct PostCell_Previews: PreviewProvider {
     static var previews: some View {
-        PostCell(post: postList.list[2])
+        PostCell(post: postList.list[1])
     }
 }

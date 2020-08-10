@@ -102,6 +102,11 @@
 		9984D1CE24CEE7A3008FE8A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9984D1CC24CEE7A3008FE8A7 /* LaunchScreen.storyboard */; };
 		9984D1D924CEE7A3008FE8A7 /* WeiBoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9984D1D824CEE7A3008FE8A7 /* WeiBoTests.swift */; };
 		9984D1E424CEE7A3008FE8A7 /* WeiBoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9984D1E324CEE7A3008FE8A7 /* WeiBoUITests.swift */; };
+		99A694A224E1242E00AA0697 /* PostImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A694A124E1242E00AA0697 /* PostImageCell.swift */; };
+		99A694A424E1337D00AA0697 /* PostDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A694A324E1337D00AA0697 /* PostDetailView.swift */; };
+		99A694A624E13BAC00AA0697 /* HomeNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A694A524E13BAC00AA0697 /* HomeNavigationBar.swift */; };
+		99A694A824E141C700AA0697 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A694A724E141C700AA0697 /* HomeView.swift */; };
+		99A694AA24E1477C00AA0697 /* PostListCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A694A924E1477C00AA0697 /* PostListCategory.swift */; };
 		99E7F23924CF14D100DE83F8 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E7F23824CF14D100DE83F8 /* Post.swift */; };
 /* End PBXBuildFile section */
 
@@ -224,6 +229,11 @@
 		9984D1DF24CEE7A3008FE8A7 /* WeiBoSwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeiBoSwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9984D1E324CEE7A3008FE8A7 /* WeiBoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeiBoUITests.swift; sourceTree = "<group>"; };
 		9984D1E524CEE7A3008FE8A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99A694A124E1242E00AA0697 /* PostImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostImageCell.swift; sourceTree = "<group>"; };
+		99A694A324E1337D00AA0697 /* PostDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailView.swift; sourceTree = "<group>"; };
+		99A694A524E13BAC00AA0697 /* HomeNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNavigationBar.swift; sourceTree = "<group>"; };
+		99A694A724E141C700AA0697 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		99A694A924E1477C00AA0697 /* PostListCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListCategory.swift; sourceTree = "<group>"; };
 		99E7F23824CF14D100DE83F8 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -372,6 +382,11 @@
 				997335A024CF123800D8CC35 /* PostVIPBadge.swift */,
 				99E7F23824CF14D100DE83F8 /* Post.swift */,
 				9975C85324D50BD200469D0B /* PostLiseView.swift */,
+				99A694A924E1477C00AA0697 /* PostListCategory.swift */,
+				99A694A324E1337D00AA0697 /* PostDetailView.swift */,
+				99A694A124E1242E00AA0697 /* PostImageCell.swift */,
+				99A694A524E13BAC00AA0697 /* HomeNavigationBar.swift */,
+				99A694A724E141C700AA0697 /* HomeView.swift */,
 				9975C85124D5073900469D0B /* PostCellToolbarButton.swift */,
 				9984D1C724CEE7A3008FE8A7 /* Assets.xcassets */,
 				9984D1CC24CEE7A3008FE8A7 /* LaunchScreen.storyboard */,
@@ -623,12 +638,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				9984D1C224CEE7A1008FE8A7 /* AppDelegate.swift in Sources */,
+				99A694A424E1337D00AA0697 /* PostDetailView.swift in Sources */,
 				9975C85224D5073900469D0B /* PostCellToolbarButton.swift in Sources */,
 				9975C85424D50BD200469D0B /* PostLiseView.swift in Sources */,
 				997335A124CF123800D8CC35 /* PostVIPBadge.swift in Sources */,
 				9984D1C424CEE7A1008FE8A7 /* SceneDelegate.swift in Sources */,
 				9984D1C624CEE7A1008FE8A7 /* ContentView.swift in Sources */,
+				99A694A624E13BAC00AA0697 /* HomeNavigationBar.swift in Sources */,
 				99E7F23924CF14D100DE83F8 /* Post.swift in Sources */,
+				99A694A824E141C700AA0697 /* HomeView.swift in Sources */,
+				99A694AA24E1477C00AA0697 /* PostListCategory.swift in Sources */,
+				99A694A224E1242E00AA0697 /* PostImageCell.swift in Sources */,
 				9975C85624D50CB800469D0B /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

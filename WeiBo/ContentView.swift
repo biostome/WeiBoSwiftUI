@@ -11,7 +11,11 @@ import SwiftUI
 struct ContentView: View {
     
     var body: some View {
-        Text("Hello, World!")
+//        NavigationView {
+//            PostLiseView(category: .hot)
+//                .navigationBarTitle("微博", displayMode: .large)
+//        }
+        Text("hello")
     }
 }
 
