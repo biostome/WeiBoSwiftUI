@@ -9,18 +9,23 @@
 import SwiftUI
 
 struct HomeView: View {
+    @State var leftPercent:CGFloat = 0
+    
     var body: some View {
         NavigationView {
-            ScrollView(.horizontal,showsIndicators: false){
-                HStack(spacing: 0){
-                    PostLiseView(category: .recommend)
-                        .frame(width: UIScreen.main.bounds.width)
-                    PostLiseView(category: .hot)
-                        .frame(width: UIScreen.main.bounds.width)
+
+            GeometryReader { reader in
+                HScrollViewController(pageWidth: reader.size.width, contentSize: .init(width: reader.size.width * 2, height: reader.size.height ), leftPercent: self.$leftPercent) {
+                    HStack(spacing: 0){
+                        PostLiseView(category: .recommend)
+                            .frame(width: UIScreen.main.bounds.width)
+                        PostLiseView(category: .hot)
+                            .frame(width: UIScreen.main.bounds.width)
+                    }
                 }
             }
             .edgesIgnoringSafeArea(.bottom)
-            .navigationBarItems(leading: HomeNavigationBar(leftPercent: 0))
+            .navigationBarItems(leading: HomeNavigationBar(leftPercent: self.$leftPercent))
             .navigationBarTitle("首页",displayMode: .inline)
         }
     }

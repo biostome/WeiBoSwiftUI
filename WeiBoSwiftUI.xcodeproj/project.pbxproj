@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9918AD3F24EFE89A00BF4684 /* HScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9918AD3E24EFE89A00BF4684 /* HScrollViewController.swift */; };
 		9973354D24CF0F4600D8CC35 /* 8697cf1ely8gashxj3b09j20u00u040v.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 997334FA24CF0F4600D8CC35 /* 8697cf1ely8gashxj3b09j20u00u040v.jpg */; };
 		9973354E24CF0F4600D8CC35 /* d0c21786ly1gavj2c0kcej20c8096dh7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 997334FB24CF0F4600D8CC35 /* d0c21786ly1gavj2c0kcej20c8096dh7.jpg */; };
 		9973354F24CF0F4600D8CC35 /* 6ec3b446jw1e8qgp5bmzyj2050050aa8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 997334FC24CF0F4600D8CC35 /* 6ec3b446jw1e8qgp5bmzyj2050050aa8.jpg */; };
@@ -128,6 +129,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9918AD3E24EFE89A00BF4684 /* HScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HScrollViewController.swift; sourceTree = "<group>"; };
 		997334FA24CF0F4600D8CC35 /* 8697cf1ely8gashxj3b09j20u00u040v.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 8697cf1ely8gashxj3b09j20u00u040v.jpg; sourceTree = "<group>"; };
 		997334FB24CF0F4600D8CC35 /* d0c21786ly1gavj2c0kcej20c8096dh7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = d0c21786ly1gavj2c0kcej20c8096dh7.jpg; sourceTree = "<group>"; };
 		997334FC24CF0F4600D8CC35 /* 6ec3b446jw1e8qgp5bmzyj2050050aa8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 6ec3b446jw1e8qgp5bmzyj2050050aa8.jpg; sourceTree = "<group>"; };
@@ -386,6 +388,7 @@
 				99A694A324E1337D00AA0697 /* PostDetailView.swift */,
 				99A694A124E1242E00AA0697 /* PostImageCell.swift */,
 				99A694A524E13BAC00AA0697 /* HomeNavigationBar.swift */,
+				9918AD3E24EFE89A00BF4684 /* HScrollViewController.swift */,
 				99A694A724E141C700AA0697 /* HomeView.swift */,
 				9975C85124D5073900469D0B /* PostCellToolbarButton.swift */,
 				9984D1C724CEE7A3008FE8A7 /* Assets.xcassets */,
@@ -648,6 +651,7 @@
 				99E7F23924CF14D100DE83F8 /* Post.swift in Sources */,
 				99A694A824E141C700AA0697 /* HomeView.swift in Sources */,
 				99A694AA24E1477C00AA0697 /* PostListCategory.swift in Sources */,
+				9918AD3F24EFE89A00BF4684 /* HScrollViewController.swift in Sources */,
 				99A694A224E1242E00AA0697 /* PostImageCell.swift in Sources */,
 				9975C85624D50CB800469D0B /* PostCell.swift in Sources */,
 			);
