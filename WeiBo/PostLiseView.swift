@@ -12,17 +12,10 @@ struct PostLiseView: View {
     
     let category:PostListCategory
     
-    var postList: PostList {
-        switch category {
-        case .recommend:
-            return loadPostListData("PostListData_recommend_1.json")
-        case .hot:
-            return loadPostListData("PostListData_hot_1.json")
-        }
-    }
+    @EnvironmentObject var userData: UserData
     
     var body: some View {
-        List(postList.list){ item in
+        List(userData.postList(for: category).list){ item in
             ZStack {
                 PostCell(post: item)
                 NavigationLink(destination: PostDetailView(post: item)) {
@@ -42,5 +35,6 @@ struct PostLiseView_Previews: PreviewProvider {
             PostLiseView(category: .hot)
                 .navigationBarTitle("微博", displayMode: .large)
         }
+        .environmentObject(UserData())
     }
 }
