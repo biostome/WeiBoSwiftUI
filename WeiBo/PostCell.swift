@@ -13,6 +13,8 @@ struct PostCell: View {
     
     let post: Post
     
+    @State var presentComment: Bool = false
+    
     var bindingPost: Post {
         userData.post(forId: post.id)!
     }
@@ -74,9 +76,14 @@ struct PostCell: View {
             
             HStack(spacing: 0) {
                 Spacer()
-                PostCellToolbarButton(image: "message", text: post.commentCountText, color: .black, action: {
-                    print("click message button")
+                PostCellToolbarButton(image: "message", text: post.commentCountText, color: .black)
+                {
+                    self.presentComment = true
+                }
+                .sheet(isPresented: $presentComment, content: {
+                    CommentInputView(post:self.post).environmentObject(self.userData)
                 })
+                
                 Spacer()
                 PostCellToolbarButton(image: post.isLiked ? "heart.fill" : "heart", text: post.likeCountText, color: post.isLiked ? .red : .black, action: {
                     if post.isLiked {
